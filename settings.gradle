@@ -1,0 +1,2 @@
+rootProject.name = "Newsify"
+include ':app'
