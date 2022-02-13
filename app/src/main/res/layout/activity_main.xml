@@ -23,6 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Newsify"
+                android:onClick="LoginScreen"
                 android:textColor="@color/yellow"
                 android:textAlignment="center"
                 android:padding="4dp"

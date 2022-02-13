@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
@@ -86,6 +87,7 @@ public class MainActivity extends AppCompatActivity implements CategoryRVAdapter
                 ArrayList<Articles> articles = newsModal.getArticles();
                 for(int i = 0; i < articles.size(); i++){
                     articlesArrayList.add(new Articles(articles.get(i).getTitle(),articles.get(i).getDescription(),articles.get(i).getUrlToImage(),articles.get(i).getUrl(),articles.get(i).getContent()));
+
                 }
 
                 newsRVAdapter.notifyDataSetChanged();
@@ -98,6 +100,10 @@ public class MainActivity extends AppCompatActivity implements CategoryRVAdapter
         });
 
 
+    }
+
+    public void LoginScreen(View view){
+        startActivity(new Intent(getApplicationContext(),StartupScreen.class));
     }
     @Override
     public void onCategoryClick(int position) {
