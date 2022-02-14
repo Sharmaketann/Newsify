@@ -34,4 +34,19 @@ public class StartupScreen extends AppCompatActivity {
             startActivity(intent);
         }
     }
+    public void SignUp(View view){
+        Intent intent = new Intent(getApplicationContext(),SignUp.class);
+
+        Pair[] pairs = new Pair[1];
+
+        pairs[0] = new Pair<View, String>(findViewById(R.id.signup_btn),"transition_signup");
+
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(StartupScreen.this, pairs);
+            startActivity(intent, options.toBundle());
+        }
+        else {
+            startActivity(intent);
+        }
+    }
 }

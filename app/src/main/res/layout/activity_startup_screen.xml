@@ -62,7 +62,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
+                android:transitionName="transition_signup"
                 android:layout_weight="1"
+                android:onClick="SignUp"
                 android:text="Sign Up">
 
             </Button>
