@@ -11,14 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Newsify">
-        <activity android:name=".SignUp3rdClass"></activity>
+        <activity android:name=".VerifyOTP"></activity>
+        <activity android:name=".SignUp3rdClass" />
         <activity android:name=".SignUp2ndClass" />
         <activity android:name=".SignUp" />
         <activity android:name=".Login" />
-        <activity android:name=".StartupScreen" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".NewDetailActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".StartupScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
