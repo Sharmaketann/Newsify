@@ -57,6 +57,7 @@
             android:fontFamily="@font/poppins_semibold"/>
 
         <com.chaos.view.PinView
+            android:id="@+id/pin_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:itemWidth="50dp"
@@ -76,11 +77,14 @@
         </com.chaos.view.PinView>
 
         <Button
+            android:id="@+id/main"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/yellow"
             android:text="Verify Code"
+            android:onClick="callNextScreenFromOTP"
             android:layout_marginTop="30dp"
+            android:transitionName="transition_OTP_screen"
             android:textColor="@color/black"/>
 
     </LinearLayout>

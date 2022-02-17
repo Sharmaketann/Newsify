@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Newsify">
-        <activity android:name=".MakeSelection"></activity>
+        <activity android:name=".ForgotPassword"></activity>
+        <activity android:name=".SignInGoogle" />
+        <activity android:name=".SignIn" />
+        <activity android:name=".MakeSelection" />
         <activity android:name=".ForgetPassword" />
         <activity android:name=".VerifyOTP" />
         <activity android:name=".SignUp3rdClass" />
